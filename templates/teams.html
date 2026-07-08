@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMC Teams</title>
+    <style>
+        body { background-color: #3b3b3b; color: white;  font-family: "Montserrat", sans-serif; font-size: 12px; }
+        nav {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            background-color: #222;
+        }
+        nav a {
+            margin-right: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        table { border-collapse: collapse; margin-bottom: 8px; }
+        th, td { border: 1px solid #ccc; padding: 4px 8px; }
+        .toggle-add { cursor: pointer; color: blue; text-decoration: underline; background: none; border: none; margin-bottom: 32px; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "nav.html" %}
+    <h1>SMC Teams</h1>
+    <h2>Import from CSV</h2>
+    <form action="/teams/import" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Import CSV</button>
+    </form>
+
+    <h2>Add a team</h2>
+    <form action="/teams/add" method="post">
+        <input type="text" name="team_name" placeholder="Team name" required>
+        <button type="submit">Add team</button>
+    </form>
+
+    {% for team_name, members in teams.items() %}
+    <h2>
+        {{ team_name }}
+        <form action="/teams/{{ team_name }}/remove" method="post" style="display:inline">
+            <button type="submit">Remove team</button>
+        </form>
+    </h2>
+
+    <form action="/teams/{{ team_name }}/save" method="post">
+        <table>
+            <tr>
+                <th>Discord ID</th>
+                <th>osu! ID</th>
+                <th>osu! Username</th>
+                <th></th>
+            </tr>
+            {% for m in members %}
+            <tr>
+                <td><input type="text" name="discord_id" value="{{ m.discord_id }}"></td>
+                <td><input type="text" name="osu_id" value="{{ m.osu_id }}"></td>
+                <td><input type="text" name="osu_username" value="{{ m.osu_username }}"></td>
+                <td><button type="submit" formaction="/teams/{{ team_name }}/removeMember" formmethod="post" name="discord_id" value="{{ m.discord_id }}">Remove</button></td>
+            </tr>
+            {% endfor %}
+
+            <tr id="add-row-{{ loop.index0 }}-{{ team_name }}" style="display:none">
+                <td><input type="text" name="discord_id" placeholder="Discord ID"></td>
+                <td><input type="text" name="osu_id" placeholder="osu! ID"></td>
+                <td><input type="text" name="osu_username" placeholder="osu! username"></td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="submit">Save changes</button>
+    </form>
+
+    <button class="toggle-add" onclick="document.getElementById('add-row-{{ loop.index0 }}-{{ team_name }}').style.display = 'table-row'">+ Add row</button>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMC Mappool</title>
+    <style>
+        body { background-color: #3b3b3b; color: white;  font-family: "Montserrat", sans-serif; font-size: 12px; }
+        nav {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            background-color: #222;
+        }
+        nav a {
+            margin-right: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        table { border-collapse: collapse; margin-bottom: 32px; width: 100%; }
+    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "nav.html" %}
+    <h1>SMC Mappool</h1>
+    <p>Add/remove maps from the pool and view them here</p>
+
+    <h2>Add Maps</h2>
+    <form action="/pool/add" method="post">
+        <input type="number" name="beatmap_id" placeholder="beatmap id" required>
+        <button type="submit">Add map</button>
+    </form>
+
+    <h2>Mappool</h2>
+    <table border="1">
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Difficulty</th>
+            <th>Beatmap Set ID</th>
+            <th>Beatmap Checksum</th>
+            <th>Del.</th>
+        </tr>
+        {% for entry in pool %}
+        <tr>
+            <td>&nbsp;{{ entry.artist }}</td>
+            <td>&nbsp;{{ entry.title }}</td>
+            <td>&nbsp;{{ entry.difficulty }}</td>
+            <td>&nbsp;{{ entry.beatmapset_id }}</td>
+            <td>&nbsp;{{ entry.checksum }}</td>
+            <td>
+                <form action="/pool/remove" method="post" style="display:inline">
+                    <input type="hidden" name="checksum" value="{{ entry.checksum }}">
+                    <button type="submit" class="remove-btn">X</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
