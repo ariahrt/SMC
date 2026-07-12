@@ -5,15 +5,18 @@ from fastapi import FastAPI, Request, Form, Depends, dependencies, UploadFile, F
 from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from main import get_creds, add_map, eval_submission, get_osu_ident, import_teams, find_team
+from main import get_creds, add_map, eval_submission, get_osu_ident, import_teams, find_team, recompute
 from datetime import datetime
 from typing import List
 from starlette.middleware.sessions import SessionMiddleware
+from tracker import steam, epic, xbox
+
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 osu_client = get_creds()
 app.mount("/files", StaticFiles(directory="replays"), name="files")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 app.add_middleware(SessionMiddleware, secret_key=os.environ["SESSION_SECRET"], max_age=2592000)
 
 osu_ids = {17805659}
@@ -34,7 +37,7 @@ def auth_callback(request: Request, code: str, state: str):
     if state != request.session.get("oauth_state"):
         return {"error": "state mismatch"}, 400
 
-    identity = getOsuIdent(code, "http://127.0.0.1:8000/auth/callback")
+    identity = get_osu_ident(code, "http://127.0.0.1:8000/auth/callback")
 
     if identity["id"] not in osu_ids:
         return {"error": "unauthorized"}, 400
@@ -49,6 +52,8 @@ def format_ts(value):
     return dt.strftime("%Y-%m-%d %H:%M:%S") + " UTC+0"
 
 templates.env.filters["fmt_ts"] = format_ts
+
+@app.get("/player-data")
 
 @app.get("/login")
 def login(request: Request):
@@ -75,12 +80,72 @@ def home(request):
 def view_pool(request: Request):
     with open("pool.json") as f:
         pool = json.load(f)
+
+    search = request.query_params.get("search", "").lower()
+    filter_df = request.query_params.get("filter_df", "")
+    filter_wk = request.query_params.get("filter_wk", "")
+    sort_keys = request.query_params.getlist("sort")
+
+    if search: 
+        pool = [
+            e for e in pool
+            if search in str(e["map_id"]).lower()
+            or search in e["artist"].lower()
+            or search in e["title"].lower()
+            or search in e["difficulty"].lower()
+        ]
+    
+    if filter_df:
+        pool = [e for e in pool if str(e["df"]) == filter_df]
+    
+    if filter_wk:
+        pool = [e for e in pool if str(e["wk"]) == filter_wk]
+
+    for key in reversed(sort_keys):
+        field = {"sr": "stars", "df": "df", "wk": "wk"}[key]
+        pool.sort(key=lambda e: e[field])
+
     return templates.TemplateResponse(request, "pool.html", {"pool": pool})
 
+@app.get("/settings", dependencies=[Depends(require_auth)])
+def view_settings(request):
+    return templates.TemplateResponse("settings.html")
+
+@app.post("/settings/recompute", dependencies=[Depends(require_auth)])
+def recompute_pool():
+    count = recompute()
+    return RedirectResponse(f"/settings?recomputed={count}", status_code=303)
+
 @app.post("/pool/add", dependencies=[Depends(require_auth)])
-def add_bmap(beatmap_id: int = Form(...)):
-    add_map(osu_client, beatmap_id)
+def add_bmap(beatmap_id: int = Form(...), df: int = Form(...), wk: int = Form(...)):
+    with open("pool.json") as f:
+        pool = json.load(f)
+
+    existing = False
+
+    for entry in pool:
+        if entry["map_id"] == beatmap_id:
+            existing = True
+
+    if existing:
+        return RedirectResponse(url="/pool", status_code=303)
+
+    add_map(osu_client, beatmap_id, df, wk)
     return RedirectResponse(url="/pool", status_code=303)
+
+@app.post("/pool/toggle", dependencies=[Depends(require_auth)])
+def toggle_release(checksum: str = Form(...)):
+    with open("pool.json") as f:
+        pool = json.load(f)
+
+    for entry in pool:
+        if entry["checksum"] == checksum:
+            entry["active"] = not entry["active"]
+    
+    with open("pool.json", "w") as f:
+        json.dump(pool, f, indent=2)
+    return RedirectResponse(url="/pool", status_code=303)
+
 
 @app.post("/pool/remove", dependencies=[Depends(require_auth)])
 def remove_bmap(checksum: str = Form(...)):
@@ -111,6 +176,7 @@ def view_submissions(request: Request):
 
     grouped = []
     for entry in pool:
+
         matches = [
             {**s, "team": find_team(s.get("player_id"))}
             for s in submissions

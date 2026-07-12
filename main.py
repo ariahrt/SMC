@@ -27,7 +27,20 @@ def get_osu_ident(code, redirect_uri):
     user = user_client.get_own_data()
     return {"id": user.id, "username": user.username}
 
-def add_map(client, beatmap_id, pool_path="pool.json"):
+def recompute(pool_path="pool.json"):
+    with open(pool_path) as f:
+        pool = json.load(f)
+    
+    for entry in pool:
+        entry.setdefault("df", 1)
+        entry.setdefault("wk", 1)
+
+    with open(pool_path, "w") as f:
+        json.dump(pool, f, indent=2)
+
+    return len(pool)
+
+def add_map(client, beatmap_id, df, wk, pool_path="pool.json"):
     beatmap = client.lookup_beatmap(id=beatmap_id)
     entry = {
         "artist": beatmap.beatmapset.artist,
@@ -35,6 +48,15 @@ def add_map(client, beatmap_id, pool_path="pool.json"):
         "difficulty": beatmap.version,
         "checksum": beatmap.checksum,
         "beatmapset_id": beatmap.beatmapset.id,
+        "beatmap_covers": beatmap.beatmapset.covers.cover,
+        "creator": beatmap.beatmapset.creator,
+        "stars": beatmap.difficulty_rating,
+        "length": beatmap.total_length,
+        "map_id": beatmap.id,
+        "bpm": beatmap.bpm,
+        "active": False,
+        "df": df,
+        "wk": wk,
     }
 
     if os.path.exists(pool_path):

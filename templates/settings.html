@@ -18,12 +18,12 @@
     {% include "nav.html" %}
     <div class="header">
         <div class="inside">
-            <p class="p-head">SMC Submissions</p>
-            <p class="head-p">Review submissions for active maps.</p>
+            <p class="p-head">SMC Settings</p>
+            <p class="head-p">Review and change all settings.</p>
         </div>
     </div>
-    {% for group in grouped %}
-
-    {% endfor %}
+    <form action="/settings/recompute" method="post">
+        <button type="submit">recompute</button>
+    </form>
 </body>
 </html>

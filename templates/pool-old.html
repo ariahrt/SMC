@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMC | Pooling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="static/image.png">
+    <link rel="stylesheet" href="static/style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "nav.html" %}
+    <div class="header">
+        <div class="inside">
+            <p class="p-head">SMC Pooling</p>
+            <p class="head-p">Add/remove maps from the pool and view them here.</p>
+        </div>
+    </div>
+
+    <h2>Add Maps</h2>
+    <form action="/pool/add" method="post">
+        <input type="number" name="beatmap_id" placeholder="beatmap id" required>
+        <button type="submit">Add map</button>
+    </form>
+
+    <h2>Mappool</h2>
+    <table border="1">
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Difficulty</th>
+            <th>Beatmap Set ID</th>
+            <th>Beatmap Checksum</th>
+            <th>Del.</th>
+        </tr>
+        {% for entry in pool %}
+        <tr>
+            <td>&nbsp;{{ entry.artist }}</td>
+            <td>&nbsp;{{ entry.title }}</td>
+            <td>&nbsp;{{ entry.difficulty }}</td>
+            <td>&nbsp;{{ entry.beatmapset_id }}</td>
+            <td>&nbsp;{{ entry.checksum }}</td>
+            <td>
+                <form action="/pool/remove" method="post" style="display:inline">
+                    <input type="hidden" name="checksum" value="{{ entry.checksum }}">
+                    <button type="submit" class="remove-btn">X</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

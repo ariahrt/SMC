@@ -3,3 +3,10 @@
 __pycache__/
 *.pyc
 replays/
+pool.json
+submissions.json
+teams.json
+mr_users.json
+hy_users.json
+rl_users.json
+

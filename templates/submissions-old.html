@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMC Submissions</title>
+    <link rel="icon" type="image/png" href="images/image.png">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "nav.html" %}
+    <h1>SMC Submissions</h1>
+    <p>This page shows all submissions grouped by map and sorted by submission time.</p>
+    {% for group in grouped %}
+    <h2>{{ group.map.artist }} - {{ group.map.title }} [{{ group.map.difficulty }}]</h2>
+    <table>
+        <tr>
+            <th>Submission Timestamp</th>
+            <th>Played At</th>
+            <th>Team</th>
+            <th>UID</th>
+            <th>Username</th>
+            <th>Screenshot</th>
+            <th>.osr File</th>
+        </tr>
+        {% for s in group.submissions %}
+        <tr>
+            <td>{{ s.timestamp | fmt_ts }}</td>
+            <td>{{ s.played_at | fmt_ts }}</td>
+            <td><b>{{ s.team or "?" }}</b></td>
+            <td>{{ s.player_id }}</td>
+            <td>{{ s.player }}</td>
+            <td><a href="/files/{{ s.screenshot_file.split('/')[-1] }}" class="screenshot" target="_blank">View</a></td>
+            <td><a href="/files/{{ s.replay_file.split('/')[-1] }}" class="osr" download>Download</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endfor %}
+
+    <h2>Incorrect Submissions</h2>
+    <table>
+        <tr>
+            <th>Submission TS</th>
+            <th>Team</th>
+            <th>UID</th>
+            <th>User</th>
+            <th>Artist</th>
+            <th>Song</th>
+            <th>Diff</th>
+            <th>BMID</th>
+            <th>Screenshot</th>
+            <th>.osr</th>
+            <th>Status</th>
+        </tr>
+        {% for s in incorrect %}
+        <tr class="{{ s.status_class }}">
+            <td>{{ s.timestamp | fmt_ts }}</td>
+            <td><b>{{ s.team or "?" }}</b></td>
+            <td>{{ s.player_id }}</td>
+            <td>{{ s.player }}</td>
+            <td>{{ s.played.artist if s.played else "?" }}</td>
+            <td>{{ s.played.title if s.played else "?" }}</td>
+            <td>{{ s.played.difficulty if s.played else "?" }}</td>
+            <td>{{ s.played.beatmap_id if s.played else "?" }}</td>
+            <td><a href="/files/{{ s.screenshot_file.split('/')[-1] }}" class="screenshot" target="_blank"><b>View</b></a></td>
+            <td><a href="/files/{{ s.replay_file.split('/')[-1] }}" class="osr" download><b>Download</b></a></td>
+            <td>{{ s.status_label }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
