@@ -137,12 +137,11 @@ def hy_get_data(user, team, hyusers_path="hy_users.json"):
 
 def lol_get_data(user, team, lolusers_path="lol_users.json"):
     safe_user = quote(user)
-    url = f"https://api.tracker.gg/api/v2/marvel-rivals/standard/profile/ign/{safe_user}"
+    url = f"https://api.tracker.gg/api/v2/lol/standard/profile/ign/{safe_user}"
     scraper = cloudscraper.create_scraper()
     data = scraper.get(url).json()
     pi = data["data"]["platformInfo"]
-    peak_rank = mr_get_peak(data)
-    main_role = get_main_role(data)
+
 
 
 # marvel rivals
