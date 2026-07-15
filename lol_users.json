@@ -1,0 +1,483 @@
+[
+  {
+    "region": "NA",
+    "summoner": {
+      "id": 77322464,
+      "summoner_id": "80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4",
+      "acct_id": "GOstve791XxFOgVoSCXej59pV65OkQKN8-1ktlqIKu-BQ-4",
+      "puuid": "p5qU1pJue3K17kz0R1M2uARFD1t1zI63pwLhAdWChAyRhQUPenkDD_rTbl7l-JAtecCfcsZx-8BGtA",
+      "game_name": "Snafutx",
+      "tagline": "NA1",
+      "name": "Snafutx",
+      "internal_name": "snafutx",
+      "profile_image_url": "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7017.jpg",
+      "level": 748,
+      "updated_at": "2026-07-15T04:34:17+09:00",
+      "renewable_at": "2026-07-15T04:36:17+09:00",
+      "revision_at": "2026-07-13T02:51:58+09:00",
+      "solo_tier_info": null,
+      "team_info": null,
+      "previous_seasons": [
+        {
+          "season_id": 31,
+          "tier_info": {
+            "tier": "PLATINUM",
+            "division": 3,
+            "lp": 67,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/platinum.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/platinum.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 31,
+            "value": 15,
+            "display_value": 2025,
+            "split": null,
+            "season": 1,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 29,
+          "tier_info": {
+            "tier": "GOLD",
+            "division": 2,
+            "lp": 78,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/gold.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/gold.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 29,
+            "value": 14,
+            "display_value": 2024,
+            "split": 3,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 27,
+          "tier_info": {
+            "tier": "GOLD",
+            "division": 1,
+            "lp": 57,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/gold.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/gold.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 27,
+            "value": 14,
+            "display_value": 2024,
+            "split": 2,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 25,
+          "tier_info": {
+            "tier": "PLATINUM",
+            "division": 3,
+            "lp": 0,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/platinum.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/platinum.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 25,
+            "value": 14,
+            "display_value": 2024,
+            "split": 1,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 23,
+          "tier_info": {
+            "tier": "PLATINUM",
+            "division": 4,
+            "lp": 93,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/platinum.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/platinum.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 23,
+            "value": 13,
+            "display_value": 2023,
+            "split": 2,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 21,
+          "tier_info": {
+            "tier": "GOLD",
+            "division": 3,
+            "lp": 48,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/gold.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/gold.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 21,
+            "value": 13,
+            "display_value": 2023,
+            "split": 1,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 19,
+          "tier_info": {
+            "tier": "GOLD",
+            "division": 4,
+            "lp": 51,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/gold.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/gold.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 19,
+            "value": 12,
+            "display_value": 2022,
+            "split": null,
+            "season": null,
+            "is_preseason": false
+          }
+        },
+        {
+          "season_id": 17,
+          "tier_info": {
+            "tier": "SILVER",
+            "division": 4,
+            "lp": 1,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/silver.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/silver.png"
+          },
+          "created_at": null,
+          "meta": {
+            "id": 17,
+            "value": 11,
+            "display_value": 2021,
+            "split": null,
+            "season": null,
+            "is_preseason": false
+          }
+        }
+      ],
+      "league_stats": [
+        {
+          "game_type": "SOLORANKED",
+          "tier_info": {
+            "tier": "GOLD",
+            "division": 1,
+            "lp": 45,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/gold.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/gold.png"
+          },
+          "win": 8,
+          "lose": 9,
+          "is_hot_streak": false,
+          "is_fresh_blood": false,
+          "is_veteran": false,
+          "is_inactive": false,
+          "series": null,
+          "updated_at": null
+        },
+        {
+          "game_type": "FLEXRANKED",
+          "tier_info": {
+            "tier": "PLATINUM",
+            "division": 1,
+            "lp": 91,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/platinum.png",
+            "border_image_url": "https://opgg-static.akamaized.net/images/border_new/platinum.png"
+          },
+          "win": 5,
+          "lose": 2,
+          "is_hot_streak": false,
+          "is_fresh_blood": false,
+          "is_veteran": false,
+          "is_inactive": false,
+          "series": null,
+          "updated_at": null
+        },
+        {
+          "game_type": "ARENA",
+          "tier_info": {
+            "tier": null,
+            "division": null,
+            "lp": null,
+            "level": null,
+            "tier_image_url": "https://opgg-static.akamaized.net/images/medals_new/default_unranked.svg",
+            "border_image_url": null
+          },
+          "win": null,
+          "lose": null,
+          "is_hot_streak": false,
+          "is_fresh_blood": false,
+          "is_veteran": false,
+          "is_inactive": false,
+          "series": null,
+          "updated_at": null
+        }
+      ],
+      "most_champions": {
+        "game_type": "RANKED",
+        "season_id": 33,
+        "year": null,
+        "play": 24,
+        "win": 13,
+        "lose": 11,
+        "champion_stats": [
+          {
+            "id": 901,
+            "play": 5,
+            "win": 3,
+            "lose": 2,
+            "game_length_second": 10659,
+            "kill": 45,
+            "death": 39,
+            "assist": 37,
+            "gold_earned": 86635,
+            "minion_kill": 1341,
+            "neutral_minion_kill": 26,
+            "damage_taken": 158939,
+            "damage_dealt_to_champions": 175701,
+            "double_kill": 6,
+            "triple_kill": 1,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 25,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 28,
+            "play": 3,
+            "win": 0,
+            "lose": 3,
+            "game_length_second": 4690,
+            "kill": 15,
+            "death": 22,
+            "assist": 14,
+            "gold_earned": 29924,
+            "minion_kill": 47,
+            "neutral_minion_kill": 430,
+            "damage_taken": 80203,
+            "damage_dealt_to_champions": 45150,
+            "double_kill": 1,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 2,
+            "op_score": 10,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 223,
+            "play": 2,
+            "win": 2,
+            "lose": 0,
+            "game_length_second": 4361,
+            "kill": 14,
+            "death": 10,
+            "assist": 36,
+            "gold_earned": 30376,
+            "minion_kill": 445,
+            "neutral_minion_kill": 5,
+            "damage_taken": 122372,
+            "damage_dealt_to_champions": 77920,
+            "double_kill": 1,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 1,
+            "op_score": 10,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 101,
+            "play": 2,
+            "win": 1,
+            "lose": 1,
+            "game_length_second": 3072,
+            "kill": 3,
+            "death": 11,
+            "assist": 15,
+            "gold_earned": 19067,
+            "minion_kill": 333,
+            "neutral_minion_kill": 1,
+            "damage_taken": 33139,
+            "damage_dealt_to_champions": 28193,
+            "double_kill": 0,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 7,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 81,
+            "play": 2,
+            "win": 1,
+            "lose": 1,
+            "game_length_second": 3681,
+            "kill": 7,
+            "death": 12,
+            "assist": 19,
+            "gold_earned": 26356,
+            "minion_kill": 432,
+            "neutral_minion_kill": 4,
+            "damage_taken": 41127,
+            "damage_dealt_to_champions": 48937,
+            "double_kill": 2,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 8,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 145,
+            "play": 2,
+            "win": 1,
+            "lose": 1,
+            "game_length_second": 3165,
+            "kill": 12,
+            "death": 13,
+            "assist": 8,
+            "gold_earned": 24728,
+            "minion_kill": 390,
+            "neutral_minion_kill": 0,
+            "damage_taken": 42157,
+            "damage_dealt_to_champions": 29619,
+            "double_kill": 2,
+            "triple_kill": 2,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 9,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 141,
+            "play": 2,
+            "win": 1,
+            "lose": 1,
+            "game_length_second": 4398,
+            "kill": 17,
+            "death": 22,
+            "assist": 27,
+            "gold_earned": 32067,
+            "minion_kill": 62,
+            "neutral_minion_kill": 348,
+            "damage_taken": 97632,
+            "damage_dealt_to_champions": 69069,
+            "double_kill": 1,
+            "triple_kill": 1,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 2,
+            "op_score": 9,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 5,
+            "play": 1,
+            "win": 1,
+            "lose": 0,
+            "game_length_second": 1923,
+            "kill": 15,
+            "death": 8,
+            "assist": 10,
+            "gold_earned": 18135,
+            "minion_kill": 18,
+            "neutral_minion_kill": 209,
+            "damage_taken": 50586,
+            "damage_dealt_to_champions": 31223,
+            "double_kill": 4,
+            "triple_kill": 2,
+            "quadra_kill": 1,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 6,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 31,
+            "play": 1,
+            "win": 1,
+            "lose": 0,
+            "game_length_second": 2082,
+            "kill": 15,
+            "death": 3,
+            "assist": 6,
+            "gold_earned": 18210,
+            "minion_kill": 249,
+            "neutral_minion_kill": 16,
+            "damage_taken": 56887,
+            "damage_dealt_to_champions": 61502,
+            "double_kill": 0,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 7,
+            "snowball_throws": null,
+            "snowball_hits": null
+          },
+          {
+            "id": 234,
+            "play": 1,
+            "win": 1,
+            "lose": 0,
+            "game_length_second": 2175,
+            "kill": 9,
+            "death": 7,
+            "assist": 9,
+            "gold_earned": 16493,
+            "minion_kill": 45,
+            "neutral_minion_kill": 209,
+            "damage_taken": 32389,
+            "damage_dealt_to_champions": 21954,
+            "double_kill": 0,
+            "triple_kill": 0,
+            "quadra_kill": 0,
+            "penta_kill": 0,
+            "vision_wards_bought_in_game": 0,
+            "op_score": 4,
+            "snowball_throws": null,
+            "snowball_hits": null
+          }
+        ]
+      }
+    }
+  }
+]

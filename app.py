@@ -9,7 +9,7 @@ from main import get_creds, add_map, eval_submission, get_osu_ident, import_team
 from datetime import datetime
 from typing import List
 from starlette.middleware.sessions import SessionMiddleware
-from tracker import steam, epic, xbox
+from data import steam, epic, xbox
 
 
 app = FastAPI()

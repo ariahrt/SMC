@@ -1,0 +1,192 @@
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15'})
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:45:40][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15'})
+[14-Jul-26 14:45:40][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:45:40][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15'})
+[14-Jul-26 14:45:40][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:45:40][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:45:40][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:45:40][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001D2D76AB8C0>
+[14-Jul-26 14:45:40][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001D2D7573A20>, 162554.8284055)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001D2D76ABA10>
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:46:04][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:04][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:46:04][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:04][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:46:04][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:46:04][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:46:04][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000022AD10AB8C0>
+[14-Jul-26 14:46:04][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000022AD0F73A20>, 162578.6273216)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000022AD10ABA10>
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:46:27][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:27][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:46:27][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 14:46:27][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:46:27][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:46:27][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:46:27][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002301190B8C0>
+[14-Jul-26 14:46:27][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x00000230117D3A20>, 162601.6629261)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002301190BA10>
+[14-Jul-26 14:46:49][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:46:49][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:46:49][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:46:49][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:46:50][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:46:50][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:46:50][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:46:50][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:46:50][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:46:50][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:46:50][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:46:50][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F3313FB8C0>
+[14-Jul-26 14:46:50][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001F3312C3A20>, 162624.1218011)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001F3313FBA10>
+[14-Jul-26 14:54:14][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:54:14][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:54:14][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:54:14][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:54:15][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:54:15][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:54:15][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:54:15][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 14:54:15][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:54:15][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:54:15][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:54:15][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B2952FB8C0>
+[14-Jul-26 14:54:15][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001B2951D3A20>, 163069.3220882)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001B2952FBA10>
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'})
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 14:56:45][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'})
+[14-Jul-26 14:56:45][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 14:56:45][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'})
+[14-Jul-26 14:56:45][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 14:56:45][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 14:56:45][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 14:56:45][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000206701DB8C0>
+[14-Jul-26 14:56:45][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x00000206700B3A20>, 163219.6505124)])']
+connector: <aiohttp.connector.TCPConnector object at 0x00000206701DBA10>
+[14-Jul-26 15:02:15][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:02:15][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:02:15][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:02:15][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:02:16][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:02:16][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:02:16][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:02:16][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:02:16][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:02:16][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:02:16][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:02:16][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000017BBB1AB8C0>
+[14-Jul-26 15:02:16][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000017BBB083A20>, 163550.3934578)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000017BBB1ABA10>
+[14-Jul-26 15:03:25][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'})
+[14-Jul-26 15:03:25][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:03:25][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:03:25][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'})
+[14-Jul-26 15:03:26][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:03:26][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:03:26][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:03:26][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'})
+[14-Jul-26 15:03:26][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:03:26][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:03:26][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:03:26][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000024D2227B8C0>
+[14-Jul-26 15:03:26][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000024D22143A20>, 163620.7182889)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000024D2227BA10>
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:04:01][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:04:01][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:04:01][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:04:01][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:04:01][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:04:01][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:04:01][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015A79D2B8C0>
+[14-Jul-26 15:04:01][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015A79C03A20>, 163655.6971212)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015A79D2BA10>
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:07:10][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:07:10][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:07:10][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:07:10][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:07:10][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:07:10][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:07:10][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E3C2B2B8C0>
+[14-Jul-26 15:07:10][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001E3C38B4050>, 163844.5975997)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001E3C2B2BA10>
+[14-Jul-26 15:08:20][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 15:08:20][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:08:20][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:08:20][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 15:08:21][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:08:21][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:08:21][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:08:21][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'})
+[14-Jul-26 15:08:21][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:08:21][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:08:21][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:08:21][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000294A4CCB8C0>
+[14-Jul-26 15:08:21][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x00000294A5A50050>, 163915.2227619)])']
+connector: <aiohttp.connector.TCPConnector object at 0x00000294A4CCBA10>
+[14-Jul-26 15:08:35][OPGG.py->opgg            : 134][INFO   ] : OPGG.__init__(SUMMONER_API_URL=https://lol-api-summoner.op.gg/api, headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:08:35][OPGG.py->opgg            : 261][INFO   ] : Starting summoner search for 'Snafutx' in region 'NA'
+[14-Jul-26 15:08:35][OPGG.py->opgg            : 275][INFO   ] : Searching specific region: NA
+[14-Jul-26 15:08:35][OPGG.py->utils           : 296][INFO   ] : Sending search request to OPGG API... (API_URL = https://lol-api-summoner.op.gg/api/v3/NA/summoners?riot_id=Snafutx&hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:08:36][OPGG.py->utils           : 305][INFO   ] : Found 1 results for region NA
+[14-Jul-26 15:08:36][OPGG.py->opgg            : 299][INFO   ] : Fetching profiles for 1 summoners...
+[14-Jul-26 15:08:36][OPGG.py->opgg            : 448][INFO   ] : Fetching profiles for 1 summoner results
+[14-Jul-26 15:08:36][OPGG.py->utils           : 379][INFO   ] : Fetching profile for summoner ID: 80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4 (API_URL = https://lol-api-summoner.op.gg/api/NA/summoners/80tcHvThnVmjtVJioMGsV8Y_m88boa3_p0iD1m6Etb5O-T4/summary?hl=en_US, HEADERS = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1'})
+[14-Jul-26 15:08:36][OPGG.py->utils           : 385][INFO   ] : Request to OPGG API was successful (Content Length: 8288)
+[14-Jul-26 15:08:36][OPGG.py->opgg            :1642][INFO   ] : Returning cached seasons data for lang=en_US
+[14-Jul-26 15:08:36][OPGG.py->opgg            : 309][INFO   ] : Search completed. Found 1 results.
+[14-Jul-26 15:08:36][asyncio->base_events     :1885][ERROR  ] : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000238579BB8C0>
+[14-Jul-26 15:08:36][asyncio->base_events     :1885][ERROR  ] : Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000023857893A20>, 163930.3142223)])']
+connector: <aiohttp.connector.TCPConnector object at 0x00000238579BBA10>
